@@ -45,7 +45,7 @@ html,body{
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url(/assets/06menor.png);
+    background-image: url(../assets/06menor.png);
     background-size: cover;
     background-attachment: fixed;
     opacity: 1;
@@ -131,7 +131,7 @@ html,body{
 
 .principal{
     background-color: #ffffff;
-    background-image: url(/Assets/patternlogo.png);
+    background-image: url(../Assets/patternlogo.png);
     background-repeat: repeat-y;
     background-position: center left;
     background-size: 30px;
