@@ -246,8 +246,11 @@ html,body{
 }
 .imagem_carta--habitese{
     float: right;
-    width: 50%;
+    width: 40%;
 
+}
+.requisitos__habitese ul{
+    clear: right;
 }
 .requisitos__habitese h1{
     font-size: 1.5em;
@@ -255,7 +258,7 @@ html,body{
     padding:20px 0;
 }
 .requisitos__habitese p{
-    margin-bottom: 20px;
+    
     text-align: justify;
 
 }
@@ -263,6 +266,7 @@ html,body{
 
 .requisitos__habitese li{
     list-style-type: disc;
+    
 }
 
 .servicos h2{
