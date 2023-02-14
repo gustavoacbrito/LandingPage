@@ -1,0 +1,390 @@
+/* Cores da Marca  
+-vermelho vivo #991914
+-vermelho bordô #3B0F11
+-Cinza #706F6F
+*/
+
+
+
+@font-face {
+    font-family: 'Fortifiquemedium' ;
+    src: url('/Font/gotham-medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    
+       
+}
+@font-face {
+    font-family: 'Fortifiquelight' ;
+    src: url('/Font/gotham-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    
+    
+}
+
+.secao__inicial{
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+   
+}
+.secao__inicial::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(/Assets/06menor.png);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+    z-index: -1;
+
+}
+
+
+.cabecalho{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    
+    
+}
+
+
+.logo__cabecalho{
+    width: 15%;
+}
+
+.nav__cabecalho li{
+    display: inline-block;
+    padding-right: 40px;
+    font-family:  Fortifiquemedium, arial, sans-serif;
+    
+
+}
+.link_menu{
+    
+    text-transform: uppercase;
+    color: #706F6F;
+    font-weight: bolder;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.chamada__main{
+    display: grid;
+    height: 50vh;
+    align-items: center;
+    width: 1440px;
+    margin:auto;
+    
+   
+    
+}
+.heading{
+    padding: 25px;
+    font-family: fortifiquemedium, arial, sans-serif;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: #cccccc;
+    font-size: 2.5em;
+    align-self: center;
+    margin: auto;
+    background-color: #3B0F11 ;
+    border-radius: 15px;
+    box-shadow: 6px 6px 13px 0 #000000;
+    
+  
+}
+
+.chamada__main p{
+    font-family: fortifiquemedium, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 60px;
+    background-color: #777575d3;
+    border-radius: 15px ;
+    width: 1000px;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 6px 6px 13px 0 #000000;
+    text-shadow: 1px 1px 0px rgb(255, 255, 255);
+    
+    
+}
+
+.principal{
+    background-color: #ffffff;
+    background-image: url(/Assets/patternlogo.png);
+    background-repeat: repeat-y;
+    background-position: center left;
+    background-size: 30px;
+    
+}
+
+
+
+
+.descricao p{
+    width: 1080px;
+    font-family:fortifiquelight, arial, sans-serif;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #000000;
+    font-weight:500;
+    padding:20px ; 
+
+}
+.descricao h1{
+    width: 1080px;
+    margin: 0 auto;
+    font-family: fortifiquemedium, Arial, Helvetica, sans-serif;
+    padding:20px ;
+    font-size: 2em;
+}
+
+
+
+
+
+.beneficios{
+    width: 1240px;  
+    margin: 0 auto;
+    font-family: fortifiquelight, Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 1em;
+}
+
+.beneficios h1{
+    font-size: 1.5em;
+    font-family:fortifiquemedium, Arial, Helvetica, sans-serif;
+    padding: 20px;
+    max-width:1080px ;
+    margin: 0 auto;
+}
+
+.beneficios ol{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style-type:decimal;
+    text-align: justify;
+    margin: auto;
+    padding: 20px;
+    column-gap: 10px;
+    
+
+}
+
+.beneficios ol h2{
+    font-weight: bold;
+    font-family:fortifiquemedium, Arial, Helvetica, sans-serif;
+    color: #3B0F11;
+}
+
+.caixas_beneficios:hover{
+    border-color: rgb(131, 23, 23)
+}
+
+
+.beneficios li:hover h2{
+    font-size: 1.1em;
+
+}
+
+.caixas_beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap:8px;
+    text-align: center;
+    max-width: 23vw;
+    max-height:40vh;
+    vertical-align: top;
+    margin: 50px 1.25%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color:rgb(112, 111, 111) ;
+    border-width:2px ;           /*pode ser declarado em uma unica linha border:2px solid balck*/
+    border-style: solid;
+    border-radius: 30px;
+}
+
+.imagem_beneficios{
+    width: 70px;
+}
+
+
+
+
+.requisitos__habitese{
+    
+    max-width: 1080px;
+    margin: 0 auto;
+    font-family: fortifiquelight, Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 1.2em;
+
+}
+.imagem_carta--habitese{
+    float: right;
+    width: 50%;
+
+}
+.requisitos__habitese h1{
+    font-size: 1.5em;
+    font-family:fortifiquemedium, Arial, Helvetica, sans-serif; ;
+    padding:20px 0;
+}
+.requisitos__habitese p{
+    margin-bottom: 20px;
+    text-align: justify;
+
+}
+
+
+.requisitos__habitese li{
+    list-style-type: disc;
+}
+
+.servicos h2{
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 20px 0;
+    font-family: fortifiquemedium, Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*________FORMULÁRIOS___________*/
+
+.flexcontainer_contatos_serviços{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+.contatos{
+    border:solid 4px #3B0F11;
+    width: 650px;
+    
+    
+}
+
+.contatos h2{
+    color: rgb(0, 0, 0);
+    font-family: fortifiquemedium, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin:20px 0;
+    padding: 10px;
+}
+.formularios{
+    color: rgb(0, 0, 0);
+    font-family: Fortifiquelight, arial, serif;
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+
+}
+.bloco_formularios{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+    
+    
+    
+}
+
+.formularios__label{
+    align-self: center;
+    
+    
+
+}
+.formularios__input{
+    padding: 10px 25px;
+    margin: 0 0 20px;
+    width: 300px;
+    justify-self: start;
+    
+}
+
+
+.input-padrao , form textarea{
+    padding: 10px 25px;
+    margin: 0 0 20px;
+    width: 300px;
+
+ 
+ 
+    
+}
+
+.preferencia__contato{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: auto auto auto;
+    row-gap: 10px;
+    padding: 8px 0;
+    align-items: center;
+}
+
+form legend{
+    color: rgb(0, 0, 0);
+    font-family: Fortifiquelight, arial, serif;
+    font-size: 20px;
+   
+   
+    
+
+}
+
+#checkprojeto-label{
+    
+    padding: 8px 0;
+    display: block;
+}
+
+.enviar{
+   
+    margin: 10px auto;
+    width: auto;
+    padding: 2%;
+    font-size: 20px;
+    font-family:fortifiquemedium,Arial, Helvetica, sans-serif;
+    color: rgb(112, 111, 111);
+    background: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s all;
+   
+    
+
+}
+
+.enviar:hover{
+    background: rgb(131, 23, 23);
+    transform: scale(1.1);
+}
