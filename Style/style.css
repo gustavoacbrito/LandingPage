@@ -130,7 +130,7 @@ html,body{
 }
 
 .principal{
-    background-color: #ffffff;
+    background-color: #706f6f63;
     background-image: url(../Assets/patternlogo.png);
     background-repeat: repeat-y;
     background-position: center left;
@@ -271,7 +271,7 @@ html,body{
 .servicos h2{
     font-size: 1.5em;
     padding: 10px;
-    margin: 20px 0;
+    margin:20px;
     font-family: fortifiquemedium, Arial, Helvetica, sans-serif;
 }
 
@@ -283,6 +283,7 @@ html,body{
 .flexcontainer_contatos_serviços{
     display: flex;
     justify-content: space-evenly;
+    padding: 20px 0;
     
     
 }
@@ -390,4 +391,27 @@ form legend{
 .enviar:hover{
     background: rgb(131, 23, 23);
     transform: scale(1.1);
+}
+
+
+footer{
+    
+    text-align: center;
+    font-family: Fortifiquemedium, times, serif;
+    color:rgb(112, 111, 111);
+    padding: 20px;
+    width: 100%;
+    background-color: #706f6f7e;
+    background-image: url(../Assets/patternlogo.png);
+    background-repeat: repeat-y;
+    background-position: center left;
+    background-size: 30px;
+  
+  
+}
+
+footer img{
+    width: 10%;
+    margin: 20px;
+    padding: 5px;
 }
