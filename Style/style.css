@@ -131,11 +131,7 @@ html,body{
 
 .principal{
     background-color: #706f6f63;
-    background-image: url(../Assets/patternlogo.png);
-    background-repeat: repeat-y;
-    background-position: center left;
-    background-size: 30px;
-    
+       
 }
 
 
@@ -150,7 +146,9 @@ html,body{
     line-height: 1.5;
     color: #000000;
     font-weight:500;
-    padding:20px ; 
+    padding:30px ; 
+    box-shadow:6px 6px 13px 0 #4e4e4e;
+    
 
 }
 .descricao h1{
@@ -166,6 +164,7 @@ html,body{
 
 
 .beneficios{
+    
     width: 1240px;  
     margin: 0 auto;
     font-family: fortifiquelight, Arial, Helvetica, sans-serif;
@@ -174,9 +173,9 @@ html,body{
 }
 
 .beneficios h1{
-    font-size: 1.5em;
-    font-family:fortifiquemedium, Arial, Helvetica, sans-serif;
-    padding: 20px;
+    font-size: 28.8px;
+    font-family:fortifiquemedium, Arial, Helvetica, sans-serif; ;
+    padding-top:30px;
     max-width:1080px ;
     margin: 0 auto;
 }
@@ -189,7 +188,10 @@ html,body{
     text-align: justify;
     margin: auto;
     padding: 20px;
-    column-gap: 10px;
+    row-gap: 10px;
+    column-gap: 45px;
+    align-items: center;
+    justify-content:center ;
     
 
 }
@@ -198,6 +200,12 @@ html,body{
     font-weight: bold;
     font-family:fortifiquemedium, Arial, Helvetica, sans-serif;
     color: #3B0F11;
+    
+}
+
+.beneficios ol p{
+    font-size: 0.8em;
+    text-align: center;
 }
 
 .caixas_beneficios:hover{
@@ -217,10 +225,9 @@ html,body{
     justify-content: center;
     row-gap:8px;
     text-align: center;
-    max-width: 23vw;
-    max-height:40vh;
+    width: 330px;
+    height:260px;
     vertical-align: top;
-    margin: 50px 1.25%;
     padding: 10px;
     box-sizing: border-box;
     border-color:rgb(112, 111, 111) ;
@@ -266,6 +273,19 @@ html,body{
 .requisitos__habitese li{
     list-style-type: disc;
     
+}
+
+.tipos_habite-se{
+    width: 1240px;  
+    margin: 0 auto;
+    font-family: fortifiquelight, Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 1.2em;
+}
+.tipos_habite-se h1{
+    font-size: 1.5em;
+    font-family:fortifiquemedium, Arial, Helvetica, sans-serif; ;
+    padding:20px 0;
 }
 
 .servicos h2{
@@ -402,10 +422,7 @@ footer{
     padding: 20px;
     width: 100%;
     background-color: #706f6f7e;
-    background-image: url(../Assets/patternlogo.png);
-    background-repeat: repeat-y;
-    background-position: center left;
-    background-size: 30px;
+    
   
   
 }
