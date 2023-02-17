@@ -20,7 +20,11 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'icones' ;
+    src: url(../Font/IconsSocialMedia.ttf) format('truetype');
+ 
+}
 
 *{
     box-sizing: border-box;
@@ -35,23 +39,13 @@ html,body{
 .secao__inicial{
     height: 100vh;
     position: relative;
-    z-index: 1;
-   
-}
-.secao__inicial::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     background-image: url(../Assets/06menor.png);
     background-size: cover;
     background-attachment: scroll;
-    opacity: 1;
-    z-index: -1;
-
+    background-repeat: no-repeat;
+   
 }
+
 
 
 .cabecalho{
@@ -70,33 +64,53 @@ html,body{
     padding: 20px;
 }
 
-.nav__cabecalho li{
-    display: inline-block;
-    padding-right: 40px;
-    font-family:  Fortifiquemedium, arial, sans-serif;
-    
 
+.menu__itens{
+    text-align: center;
+    margin-right: 40px;
+    font-family:  Fortifiquemedium, arial, sans-serif;
+    font-weight: 900;
 }
+
 .link_menu{
-    
     text-transform: uppercase;
-    color: #706F6F;
+    color: #000000;
     font-weight: bolder;
     font-size: 1em;
     text-decoration: none;
+}
+
+.botao{
+    border-radius: 10px;
+    background-color: rgba(0, 128, 0, 0.596);
+    border: green;
+    padding: 10px;
+}
+
+.botao:hover {
+    font-size: 1.3em;
+}
+
+.link_menu::before{
+    content:"n";
+    font-family: icones;
+    font-size: 2em;
+    text-transform: lowercase;
+    margin-right: 10px;
 }
 
 .chamada__main{
     display: grid;
     height: 50vh;
     align-items: center;
-    width: 1440px;
+    max-width: 80vw;
     margin:auto;
     
    
     
 }
 .heading{
+    max-width: 80vw;
     padding: 25px;
     font-family: fortifiquemedium, arial, sans-serif;
     font-variant: small-caps;
@@ -120,11 +134,11 @@ html,body{
     padding: 60px;
     background-color: #777575d3;
     border-radius: 15px ;
-    width: 1000px;
+    max-width: 1000px;
     align-self: center;
     justify-self: center;
     box-shadow: 6px 6px 13px 0 #000000;
-    text-shadow: 1px 1px 0px rgb(255, 255, 255);
+    
     
     
 }
@@ -135,10 +149,27 @@ html,body{
 }
 
 
+.titulos{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    max-width: 1080px;
+    margin: 0 auto;
+    font-family: fortifiquemedium, Arial, Helvetica, sans-serif;
+    padding:20px ;
+    font-size: 2em;
+}
+.imagem_marcador{
+    display: inline-block;
+    width: 5%;
+}
 
+.titulo_main{
+    padding-left: 20px;
+}
 
-.descricao p{
-    width: 1080px;
+.texto_descrição{
+    max-width: 1080px;
     font-family:fortifiquelight, arial, sans-serif;
     text-align: justify;
     margin: 0 auto;
@@ -147,38 +178,20 @@ html,body{
     color: #000000;
     font-weight:500;
     padding:30px ; 
-    box-shadow:6px 6px 13px 0 #4e4e4e;
-    
-
+    box-shadow:6px 6px 13px 0 #000000;
+    background-color:#706f6f88;
 }
-.descricao h1{
-    width: 1080px;
-    margin: 0 auto;
-    font-family: fortifiquemedium, Arial, Helvetica, sans-serif;
-    padding:20px ;
-    font-size: 2em;
-}
-
-
-
-
 
 .beneficios{
-    
-    width: 1240px;  
+   
+    padding-bottom: 30px;
     margin: 0 auto;
     font-family: fortifiquelight, Arial, Helvetica, sans-serif;
     line-height: 2;
     font-size: 1em;
 }
 
-.beneficios h1{
-    font-size: 28.8px;
-    font-family:fortifiquemedium, Arial, Helvetica, sans-serif; ;
-    padding-top:30px;
-    max-width:1080px ;
-    margin: 0 auto;
-}
+
 
 .beneficios ol{
     
@@ -186,6 +199,7 @@ html,body{
     grid-template-columns: auto auto auto;
     list-style-type:decimal;
     text-align: justify;
+    max-width: 1080px;
     margin: auto;
     padding: 20px;
     row-gap: 10px;
@@ -196,11 +210,16 @@ html,body{
 
 }
 
+
 .beneficios ol h2{
     font-weight: bold;
     font-family:fortifiquemedium, Arial, Helvetica, sans-serif;
     color: #3B0F11;
     
+}
+
+.imagem_beneficios{
+    width: 70px;
 }
 
 .beneficios ol p{
@@ -236,63 +255,88 @@ html,body{
     border-radius: 30px;
 }
 
-.imagem_beneficios{
-    width: 70px;
-}
-
 
 
 
 .requisitos__habitese{
     
-    max-width: 1080px;
+    padding-bottom: 30px;
     margin: 0 auto;
     font-family: fortifiquelight, Arial, Helvetica, sans-serif;
     line-height: 2;
-    font-size: 1.2em;
-
+    
 }
 .imagem_carta--habitese{
     float: right;
-    width: 40%;
+    max-width: 60%;
+    margin-right: 25px;
 
 }
 
-.requisitos__habitese h1{
-    font-size: 1.5em;
-    font-family:fortifiquemedium, Arial, Helvetica, sans-serif; ;
-    padding:20px 0;
-}
-.requisitos__habitese p{
-    
+.textos_descritivos{
+    max-width: 1080px;
     text-align: justify;
+    margin: auto;
+    font-size: 1.2em;
 
 }
 
-
-.requisitos__habitese li{
+.requisitos__habitese ul li{
     list-style-type: disc;
+    margin: auto;
+    max-width: 1080px;
+    font-size: 1.2em;
+    padding: 0 20px;
     
 }
 
 .tipos_habite-se{
-    width: 1240px;  
-    margin: 0 auto;
+    
+    padding-bottom: 30px;
     font-family: fortifiquelight, Arial, Helvetica, sans-serif;
     line-height: 2;
-    font-size: 1.2em;
+    
 }
-.tipos_habite-se h1{
-    font-size: 1.5em;
-    font-family:fortifiquemedium, Arial, Helvetica, sans-serif; ;
-    padding:20px 0;
+
+
+.tipos_habite-se ul{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 20px;
+   
 }
+.tipos_habite-se li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    border: solid 2px #3B0F11;
+    border-radius: 15px;
+    padding: 25px;
+    margin:30px auto;
+   
+}
+
+
+
 
 .servicos h2{
     font-size: 1.5em;
     padding: 10px;
     margin:20px;
     font-family: fortifiquemedium, Arial, Helvetica, sans-serif;
+}
+.servicos p{
+    max-width: 600px;
+    font-family:fortifiquelight, arial, sans-serif;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #000000;
+    padding:30px ; 
+   
 }
 
 
@@ -302,8 +346,9 @@ html,body{
 
 .flexcontainer_contatos_serviços{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 20px 0;
+    margin: 0 30px
     
     
 }
@@ -311,7 +356,7 @@ html,body{
 
 .contatos{
     border:solid 4px #3B0F11;
-    width: 650px;
+    max-width: 650px;
     
     
 }
@@ -349,7 +394,7 @@ html,body{
 .formularios__input{
     padding: 10px 25px;
     margin: 0 0 20px;
-    width: 300px;
+    max-width: 300px;
     justify-self: start;
     
 }
@@ -358,7 +403,7 @@ html,body{
 .input-padrao , form textarea{
     padding: 10px 25px;
     margin: 0 0 20px;
-    width: 300px;
+    max-width: 300px;
 
  
  
@@ -431,4 +476,123 @@ footer img{
     width: 10%;
     margin: 20px;
     padding: 5px;
+}
+
+@media screen and (max-width:1240px){
+    .beneficios ol{
+        grid-template-columns: auto auto;
+    }
+    
+    
+}
+
+@media screen and (max-width:1080px){
+    .descricao p{
+        width: 80vw;
+     }
+}
+
+
+@media screen and (max-width:760px) {
+
+    html,body{
+        height: auto;
+        
+
+}
+
+ 
+
+ .secao__inicial{
+    height: 50vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    
+    
+ }
+ .cabecalho{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    
+    
+}
+.logo__cabecalho{
+    width: 50%;
+    padding: 20px;
+}
+
+
+
+ .chamada__main{
+    height: auto;
+    max-width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+ }
+
+ .imagem_marcador{
+    width: 20%;
+ }
+
+
+ .heading{
+    max-width: 300px;
+    font-size: 1em;
+    padding: 4px;
+    text-align: center;
+ }
+
+ .chamada__main p{
+    max-width: 80vw;
+    padding: 4px;
+    font-size: 1em;
+    
+ }
+ 
+ .titulo_main{
+    font-size: 0.7em;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+ }
+
+
+ .texto_descrição{
+    width: 80vw;
+ }
+
+ .textos_descritivos{
+    padding: 0 20px;
+ }
+
+ .beneficios ol{
+    display: flex;
+    flex-direction: column;
+ }
+ .flexcontainer_contatos_serviços{
+    display: flex;
+    flex-direction: column;
+ }
+ .tipos_habite-se img{
+    max-width:90vw;
+}
+
+footer img{
+    width: 50%;
+
+}
+
+
+
+
+
 }
