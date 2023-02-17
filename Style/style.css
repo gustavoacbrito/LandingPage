@@ -54,6 +54,7 @@ html,body{
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    position: absolute;
     
     
 }
@@ -84,7 +85,7 @@ html,body{
     border-radius: 10px;
     background-color: rgba(0, 128, 0, 0.596);
     border: green;
-    padding: 10px;
+    padding: 5px;
 }
 
 .botao:hover {
@@ -100,24 +101,28 @@ html,body{
 }
 
 .chamada__main{
-    display: grid;
-    height: 50vh;
-    align-items: center;
-    max-width: 80vw;
+   
+    
     margin:auto;
+    position: relative;
+    top: 50vh;
+    
+   
+
     
    
     
 }
 .heading{
+    margin-top: 20px;
     max-width: 80vw;
     padding: 25px;
     font-family: fortifiquemedium, arial, sans-serif;
     font-variant: small-caps;
     font-weight: 600;
+    text-align: center;
     color: #cccccc;
     font-size: 2.5em;
-    align-self: center;
     margin: auto;
     background-color: #3B0F11 ;
     border-radius: 15px;
@@ -126,22 +131,7 @@ html,body{
   
 }
 
-.chamada__main p{
-    font-family: fortifiquemedium, Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    padding: 60px;
-    background-color: #777575d3;
-    border-radius: 15px ;
-    max-width: 1000px;
-    align-self: center;
-    justify-self: center;
-    box-shadow: 6px 6px 13px 0 #000000;
-    
-    
-    
-}
+
 
 .principal{
     background-color: #706f6f63;
@@ -489,11 +479,7 @@ footer img{
     
 }
 
-@media screen and (max-width:1080px){
-    .descricao p{
-        width: 80vw;
-     }
-}
+
 
 
 @media screen and (max-width:760px) {
@@ -512,6 +498,7 @@ footer img{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
+    box-shadow: 6px 6px 13px 0 #000000;
     
     
  }
@@ -535,12 +522,10 @@ footer img{
  .chamada__main{
     height: auto;
     max-width: 80vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: 40vh;
     
  }
+ 
 
  .imagem_marcador{
     width: 20%;
@@ -548,18 +533,13 @@ footer img{
 
 
  .heading{
-    max-width: 300px;
+    
     font-size: 1em;
     padding: 4px;
     text-align: center;
  }
 
- .chamada__main p{
-    max-width: 80vw;
-    padding: 4px;
-    font-size: 1em;
-    
- }
+
  
  .titulo_main{
     font-size: 0.7em;
