@@ -258,8 +258,8 @@ html,body{
 }
 .imagem_carta--habitese{
     float: right;
-    max-width: 60%;
-    margin-right: 25px;
+    max-width: 30%;
+    margin-right: 30px;
 
 }
 
@@ -560,6 +560,14 @@ footer img{
  .beneficios ol{
     display: flex;
     flex-direction: column;
+ }
+ .imagem_carta--habitese{
+    max-width: 50%;
+ }
+
+ .requisitos__habitese ul li{
+    list-style:disc;
+    margin-left: 40px;
  }
  .flexcontainer_contatos_serviços{
     display: flex;
